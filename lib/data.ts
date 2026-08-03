@@ -1,0 +1,759 @@
+export const nav = [
+  { label: "Home", href: "/" },
+  { label: "Projects", href: "/projects" },
+  { label: "Design Themes", href: "/design-themes" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
+
+export type GalleryImage = {
+  type: "full" | "half" | "medium";
+  images: string[];
+};
+
+export type Project = {
+  slug: string;
+  title: string;
+  location: string;
+  category: string;
+  year: string;
+  area: string;
+  story: string;
+  description: string;
+  cover: string;
+  gallery: GalleryImage[];
+};
+
+export const projects: Project[] = [
+  {
+    slug: "the-windsor",
+    title: "Windsor",
+    location: "Oshiwara, Mumbai",
+    category: "Modern Luxury Style",
+    year: "2023",
+    area: "2,300 sq. ft.",
+    cover: "/windsorphotos/05.jpg",
+    story:
+      "A family home built around a single, unhurried question — where does the light fall at four in the afternoon?",
+    description:
+      "Step into a space where every detail is designed to elevate everyday living. Warm lighting, luxurious textures, and timeless craftsmanship come together to create an atmosphere of comfort, sophistication, and serenity. More than an interior—it's an experience that welcomes, inspires, and stays with you. ",
+    gallery: [
+      {
+        type: "full",
+        images: ["/windsorphotos/04.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/windsorphotos/05.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/windsorphotos/12.jpg"],
+      },
+
+      {
+        type: "half",
+        images: ["/windsorphotos/08.jpg", "/windsorphotos/10.jpg"],
+      },
+    ],
+  },
+  {
+    slug: "the-imperial-heights",
+    title: "Imperial Heights",
+    location: "Goregaon, Mumbai",
+    category: "Minimalistic Style",
+    year: "2023",
+    area: "1,350 sq. ft.",
+    cover: "/imperialheights/A_04.jpg",
+    story:
+      "A young couple asked for a home with nothing to explain — every object present on purpose.",
+    description:
+      "Where simplicity meets sophistication, every corner is designed with purpose and warmth. Soft palettes, handcrafted finishes, and seamless functionality come together to create a home that feels as peaceful as it is beautiful. ",
+
+    gallery: [
+      {
+        type: "full",
+        images: ["/imperialheights/A_02.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/imperialheights/A_05.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/imperialheights/A_22.jpg"],
+      },
+    ],
+  },
+  {
+    slug: "the-desai-villa",
+    title: "Desai Villa ",
+    location: "Mira road, Mumbai ",
+    category: "Minimalistic and Mid Century  Style ",
+    year: "2022",
+    area: "2,600 sq. ft.",
+    cover: "/desai villa/428A5624_Edited.jpg",
+    story:
+      "A hill-country weekend home designed to be experienced barefoot, in silence.",
+    description:
+      "More than an entrance, it's a journey into refined living. The harmonious blend of rich materials, soft illumination, and lush greenery creates a welcoming retreat that instantly calms the mind and elevates the senses.",
+    gallery: [
+      {
+        type: "full",
+        images: ["/desai villa/428A5270_Edited.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/desai villa/428A5288_Edited.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/desai villa/428A5545_Edited.jpg"],
+      },
+    ],
+  },
+  {
+    slug: "the-lodha-marquise",
+    title: "Lodha Marquise",
+    location: "Worli, Mumbai",
+    category: "Minimalistic Style",
+    year: "2024",
+    area: "2,900 sq. ft.",
+    cover: "/lodha marquee/WhatsApp Image 2024-11-02 at 16.41.12_a3cd15f7.jpg",
+    story:
+      "A three-generation family home, planned around an open courtyard at its heart, following vastu.",
+    description:
+      "Wake up to a space designed to soothe the senses and restore the soul. Bathed in natural light, enriched with warm textures, and crafted with understated elegance, this bedroom becomes a private sanctuary where every day begins and ends in complete comfort.",
+
+    gallery: [
+      {
+        type: "half",
+        images: ["/lodha marquee/bedroom.jpg", "/lodha marquee/bedroom2.jpg"],
+      },
+      {
+        type: "medium",
+        images: ["/lodha marquee/bedroom3.jpg"],
+      },
+    ],
+  },
+  {
+    slug: "the-alsalim",
+    title: "Al Salim",
+    location: "Jogeshwari, Mumbai",
+    category: "Minimalistic Style",
+    year: "2023",
+    area: "1,100 sq. ft.",
+    cover: "/al salim/Untitled design.png",
+    story:
+      "A three-generation family home, planned around an open courtyard at its heart, following vastu.",
+    description:
+      "We design workspaces that do more than look exceptional—they shape experiences. By combining timeless aesthetics with intelligent functionality, we create offices that energize teams, impress clients, and reflect the vision of every business they represent.",
+    gallery: [
+      {
+        type: "half",
+        images: [
+          "/al salim/Untitled design (3).png",
+          "/al salim/Untitled design (2).png",
+        ],
+      },
+      {
+        type: "medium",
+        images: ["/al salim/Untitled design (1).png"],
+      },
+    ],
+  },
+  {
+    slug: "the-infinity-gym",
+    title: "Infinity Gym",
+    location: "Lower Parel, Mumbai",
+    category: "Minimalistic Style",
+    year: "2024",
+    area: "700 sq. ft.",
+    cover: "/infinity gym render/fv1.jpg",
+    story:
+      "A three-generation family home, planned around an open courtyard at its heart, following vastu.",
+    description:
+      "Designed to energize both body and mind, this fitness space blends contemporary aesthetics with a calming ambience. Bathed in natural light and crafted with premium finishes, it transforms every workout into an experience of motivation, balance, and well-being. ",
+    gallery: [
+      {
+        type: "full",
+        images: ["/infinity gym render/fv2.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/infinity gym render/fv4.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/infinity gym render/fv5.jpg"],
+      },
+    ],
+  },
+  {
+    slug: "the-infinity-community-hall",
+    title: "Infinity Community hall",
+    location: "Lower Parel, Mumbai",
+    category: "Modern Contemporary Style",
+    year: "2025",
+    area: "2,200 sq. ft.",
+    cover: "/infinitycommunityhallcenter/fv2.jpg",
+    story:
+      "A three-generation family home, planned around an open courtyard at its heart, following vastu.",
+    description:
+      "We design shared spaces that enrich everyday living. This beautifully curated community hall combines modern sophistication with inviting warmth, creating the perfect setting for celebrations, conversations, and meaningful experiences that bring communities closer together. ",
+    gallery: [
+      {
+        type: "full",
+        images: ["/infinitycommunityhallcenter/fv1 a.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/infinitycommunityhallcenter/fv3.jpg"],
+      },
+      {
+        type: "full",
+        images: ["/infinitycommunityhallcenter/fv5.jpg"],
+      },
+    ],
+  },
+];
+
+export const themes = [
+  {
+    name: "Contemporary",
+    description:
+      "Clean architectural lines softened by natural materials and warm light.",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Modern Minimal",
+    description: "Every object earns its place. Nothing more, nothing less.",
+    image:
+      "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Scandinavian",
+    description:
+      "Pale wood, soft textiles, and light that lingers in every corner.",
+    image:
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Japandi",
+    description:
+      "Japanese restraint meets Scandinavian warmth, in quiet balance.",
+    image:
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Luxury Modern",
+    description:
+      "Sculptural forms, rich materials, and considered detail throughout.",
+    image:
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Neo-Classical",
+    description:
+      "Timeless proportion and craft, reinterpreted for the way we live now.",
+    image:
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Industrial",
+    description:
+      "Honest materials — steel, concrete, timber — left to speak plainly.",
+    image:
+      "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+  },
+];
+
+export const services = [
+  {
+    title: "Space Planning",
+    description:
+      "Layouts drawn around how a family actually moves through a day.",
+    image:
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Interior Design",
+    description:
+      "Considered, complete interiors — from first sketch to final styling.",
+    image:
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Lighting",
+    description:
+      "Layered lighting design that changes character from morning to night.",
+    image:
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Furniture",
+    description:
+      "Bespoke and curated pieces, scaled and finished for each room.",
+    image:
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Material Selection",
+    description:
+      "Wood, stone and textile chosen by hand for grain, tone and touch.",
+    image:
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Execution",
+    description:
+      "Dedicated site supervision, so nothing is lost between drawing and build.",
+    image:
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Styling",
+    description:
+      "The final layer — art, objects and textiles that make a house feel lived in.",
+    image:
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+  },
+];
+
+// Service offerings, each with its own dedicated page at /services/[slug].
+// This is intentionally separate from `services` above, which only feeds
+// the compact homepage teaser and is left untouched by design.
+export type ServiceSubcategory = {
+  name: string;
+  image: string;
+  description: string;
+};
+
+export type ServiceOffering = {
+  slug: string;
+  title: string;
+  shortDescription: string;
+  heroImage: string;
+  description: string;
+  subcategories?: ServiceSubcategory[];
+};
+
+export const serviceOfferings: ServiceOffering[] = [
+  {
+    slug: "bespoke-residential-interiors",
+    title: "Bespoke Residential Interiors",
+    shortDescription:
+      "Homes designed around how a family actually lives — considered, personal, and built to last.",
+    heroImage:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "Every residential project begins the same way — not with a moodboard, but with a conversation about how a family moves through their day. From apartments to independent homes, we design interiors that hold daily life comfortably, using materials and proportions chosen to age well rather than photograph well. The result is a home that feels inevitable, not decorated.",
+    subcategories: [
+      {
+        name: "Apartments",
+        image: "/sevices/beSpoke/beSpokeApartment.jpeg",
+        description:
+          "Workspaces planned around focus, collaboration and the everyday rhythm of a team.",
+      },
+      {
+        name: "Penthouses",
+        image: "/sevices/beSpoke/beSpokePenthouse.jpeg",
+        description:
+          "Flexible environments designed to feel welcoming to many different people, every day.",
+      },
+      {
+        name: "Villas",
+        image: "/sevices/beSpoke/beSpokeVilla.jpeg",
+        description:
+          "Layouts that guide movement and attention, built around how customers actually browse.",
+      },
+      {
+        name: "Studio & Compact Homes",
+        image:
+          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Restaurants, cafés and guest spaces designed for atmosphere as much as function.",
+      },
+      {
+        name: "Modular kitchens & wardrobes",
+        image:
+          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Adaptable spaces for teams whose work changes shape from one week to the next.",
+      },
+    ],
+  },
+  {
+    slug: "modern-commercial-interiors",
+    title: "Modern Commercial Interiors",
+    shortDescription:
+      "Workspaces and commercial environments designed to perform as well as they look.",
+    heroImage:
+      "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "Commercial interiors carry a different brief — they need to work for many people, all day, and still say something about the business behind them. We design offices, retail spaces and hospitality environments that balance function with atmosphere, so a space energises without exhausting the people inside it.",
+    subcategories: [
+      {
+        name: "Corporate Offices",
+        image:
+          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Workspaces planned around focus, collaboration and the everyday rhythm of a team.",
+      },
+      {
+        name: "Co-working Spaces",
+        image:
+          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Flexible environments designed to feel welcoming to many different people, every day.",
+      },
+      {
+        name: "Retail Stores",
+        image:
+          "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Layouts that guide movement and attention, built around how customers actually browse.",
+      },
+      {
+        name: "Hospitality Spaces",
+        image:
+          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Restaurants, cafés and guest spaces designed for atmosphere as much as function.",
+      },
+      {
+        name: "Studios & Creative Environments",
+        image:
+          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+        description:
+          "Adaptable spaces for teams whose work changes shape from one week to the next.",
+      },
+    ],
+  },
+  {
+    slug: "architecture-planning",
+    title: "Architecture Planning",
+    shortDescription:
+      "Structural and spatial planning that gives every later design decision somewhere solid to stand.",
+    heroImage:
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "Before any interior decision is made, the architecture has to be right — orientation, structure, and how a building meets its site. We work closely with architects and structural engineers from the earliest stage, so the building itself supports the way it will eventually be lived in, rather than working against it.",
+    subcategories: [
+      {
+        name: "Zoning & Site Planning",
+        image: "/services/architectPlanning/architectPlanning1.jpeg",
+        description:
+          "Strategic zoning that optimizes land use,ensures smooth circulation and enhances the overall potentail of the site.",
+      },
+      {
+        name: "Planning & Layout Design",
+        image: "/services/architectPlanning/architectPlanning2.jpeg",
+        description:
+          "Thoughtfully planned layouts that maximize space efficiency,natural light, ventilation and user experience.",
+      },
+      {
+        name: "3D Modelling Process Concept",
+        image: "/services/architectPlanning/architectPlanning3.jpeg",
+        description:
+          "Conceptual 3D models to explore form, massing, materials and design possiblities.",
+      },
+      {
+        name: "3D Modelling Process",
+        image: "/services/architectPlanning/architectPlanning4.jpeg",
+        description:
+          "Detailed 3D models with materials, textures and accurate design coordination.",
+      },
+      {
+        name: "GFC Drawings & Documentation",
+        image: "/services/architectPlanning/architectPlanning5.jpeg",
+        description:
+          "Accurate, code-compliant drawings and documentation that ensure clarity, approvals and seamless execution on site.",
+      },
+      {
+        name: "BIM Coordination",
+        image: "/services/architectPlanning/architectPlanning6.jpeg",
+        description:
+          "Integrated coordination of architectural, structural and MEP systems for clash-free execution.",
+      },
+      {
+        name: "Consultant Coordination",
+        image: "/services/architectPlanning/architectPlanning7.jpeg",
+        description:
+          "Seamless coordination with all consultants to integrate expertise, resolve challenges and deliver holistic design solutions.",
+      },
+      {
+        name: "3D Visualization & Renders",
+        image: "/services/architectPlanning/architectPlanning8.jpeg",
+        description:
+          "Realistic 3D renders that bring the design to life, helping you visualize every detail before it's built.",
+      },
+      {
+        name: "3D Walkthrough",
+        image: "/services/architectPlanning/architectPlanning9.jpeg",
+        description:
+          "Immersive walkthrough that allow you to experience the space, flow and ambiance in real scale.",
+      },
+      {
+        name: "Project Execution",
+        image: "/services/architectPlanning/architectPlanning10.jpeg",
+        description:
+          "From design to delivery-ensuring quality, precision and timely execution at every step.",
+      },
+      {
+        name: "Site Monitoring & Quality Check",
+        image: "/services/architectPlanning/architectPlanning11.jpeg",
+        description:
+          "Regular site visits and quality checks to ensure design intent and superior craftsmanship.",
+      },
+      {
+        name: "Completed Project",
+        image: "/services/architectPlanning/architectPlanning12.jpeg",
+        description:
+          "Delivering exceptional spaces that are functional, aesthetic and built to last.",
+      },
+    ],
+  },
+  {
+    slug: "space-planning",
+    title: "Space Planning",
+    shortDescription:
+      "Layouts drawn around how people actually move through a day, not just how a floor plan looks on paper.",
+    heroImage:
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "Good space planning is invisible — you only notice it when it's missing. We study circulation, sightlines and daily routines before drawing a single wall, so every room earns its place and nothing feels like an afterthought.",
+    subcategories: [
+      {
+        name: "Consultation & Space Planning",
+        image: "/services/spacePlanning/spacePlanning1.jpeg",
+        description:
+          "Understanding your needs, lifestyle and vision to plan the perfect space.",
+      },
+      {
+        name: "Concept & Design Development",
+        image: "/services/spacePlanning/spacePlanning2.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "3D Modelling & Design Process",
+        image: "/services/spacePlanning/spacePlanning3.jpeg",
+        description:
+          "Detailed 3D modelling and realistic visualizaions to refine every detail before execution.",
+      },
+      {
+        name: "Material & Finish Selection",
+        image: "/services/spacePlanning/spacePlanning4.jpeg",
+        description:
+          "Curated selection of premium materials, finishes and textures.",
+      },
+    ],
+  },
+  {
+    slug: "material-selection",
+    title: "Material Selection",
+    shortDescription:
+      "Wood, stone, metal and textile, chosen by hand for grain, tone, and how they'll age.",
+    heroImage:
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "Materials do most of the emotional work in a space, long before furniture arrives. We source and hand-check every material for grain, tone and touch, favouring things that soften and deepen with age over finishes that only look their best on day one.",
+    subcategories: [
+      {
+        name: "Lighting Selection",
+        image: "/services/materialSection/materialSection1.jpeg",
+        description:
+          "Understanding your needs, lifestyle and vision to plan the perfect space.",
+      },
+      {
+        name: "Carpet & Rug Selection",
+        image: "/services/materialSection/materialSection2.jpeg",
+        description:
+          "Detailed 3D modelling and realistic visualizaions to refine every detail before execution.",
+      },
+      {
+        name: "Wall Decor Selection",
+        image: "/services/spacePlanning/spacePlanning3.jpeg",
+        description:
+          "Curated selection of premium materials, finishes and textures.",
+      },
+      {
+        name: "Curtain & Fabric Selection",
+        image: "/services/materialSection/materialSection4.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "Chandelier Selection",
+        image: "/services/materialSection/materialSection5.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "Accessories & Decor Selection",
+        image: "/services/materialSection/materialSection6.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+    ],
+  },
+  {
+    slug: "detail-drawings",
+    title: "Detail Drawings",
+    shortDescription:
+      "Technical drawings precise enough that craftsmen can execute a design exactly as intended.",
+    heroImage:
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "The difference between a good design and a beautifully built one usually comes down to detail drawings — the joinery sections, skirting profiles and millimetre-level notes that never appear in a rendering, but decide how a space actually feels underfoot and to the touch.",
+  },
+  {
+    slug: "furniture-design",
+    title: "Furniture Design",
+    shortDescription:
+      "Bespoke and curated furniture, scaled and finished to fit each room exactly.",
+    heroImage:
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "Off-the-shelf furniture rarely fits a considered interior. We design bespoke pieces where scale and proportion matter most, and curate the rest from makers whose craft matches the rest of the home — so every piece belongs, rather than merely fits.",
+  },
+  {
+    slug: "project-execution",
+    title: "Project Execution",
+    shortDescription:
+      "Dedicated on-site supervision, so the drawing survives contact with the build.",
+    heroImage:
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1800&auto=format&fit=crop",
+    description:
+      "A design is only as good as its execution. We supervise every site personally, from the first structural change to the final coat of finish, so nothing is lost in translation between the drawing and the built result.",
+    subcategories: [
+      {
+        name: "Interior Designer & Client Discussion on Site",
+        image: "/services/projectExecution/projectExecution1.jpeg",
+        description:
+          "Understanding your needs, lifestyle and vision to plan the perfect space.",
+      },
+      {
+        name: "Design Briefing Team",
+        image: "/services/projectExecution/projectExecution2.jpeg",
+        description:
+          "Detailed 3D modelling and realistic visualizaions to refine every detail before execution.",
+      },
+      {
+        name: "Carpentry Work",
+        image: "/services/projectExecution/projectExecution3.jpeg",
+        description:
+          "Curated selection of premium materials, finishes and textures.",
+      },
+      {
+        name: "Electrical Work",
+        image: "/services/projectExecution/projectExecution4.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "Plumbing Work",
+        image: "/services/projectExecution/projectExecution5.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "P.O.P & Ceiling Work",
+        image: "/services/projectExecution/projectExecution6.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "Painting Work",
+        image: "/services/projectExecution/projectExecution7.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+      {
+        name: "Joinery & Installation",
+        image: "/services/projectExecution/projectExecution8.jpeg",
+        description:
+          "Mood boards, layouts and 3D concepts that bring your ideas to life.",
+      },
+    ],
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "They designed a home that feels like us, only quieter. Every morning starts in the one room we didn't expect to love.",
+    name: "Anjali & Rohan Menon",
+    location: "The Verandah House, Alappuzha",
+  },
+  {
+    quote:
+      "Serenity Vastukala listened longer than any studio we met. The house they gave us answers questions we hadn't asked yet.",
+    name: "Priya Nair",
+    location: "Casa Linea, Bengaluru",
+  },
+  {
+    quote:
+      "Nothing about our home feels decorated. It feels considered — which is a rarer, better thing.",
+    name: "Thomas & Deepa Varghese",
+    location: "The Courtyard Residence, Kottayam",
+  },
+];
+
+export const materials = [
+  {
+    name: "Wood",
+    description:
+      "Teak, walnut and reclaimed timber, selected for grain before finish — allowed to darken and soften with age.",
+  },
+  {
+    name: "Stone",
+    description:
+      "Kota, limestone and marble, hand-set to let natural veining lead the design rather than repeat it.",
+  },
+  {
+    name: "Metal",
+    description:
+      "Brass and blackened steel, used sparingly — for the weight of a handle, the line of a rail.",
+  },
+  {
+    name: "Textile",
+    description:
+      "Linen, cane and handloom cotton, chosen for how they feel underfoot and against the hand.",
+  },
+];
+
+export const whyChoose = [
+  {
+    title: "Luxury Execution",
+    description:
+      "Every finish supervised in person, to the standard first promised at the moodboard stage.",
+  },
+  {
+    title: "Personalised Approach",
+    description:
+      "No signature look repeated on every project — each home designed from its own site and story.",
+  },
+  {
+    title: "End-to-End Service",
+    description:
+      "From the first consultation to the final styled photograph, one studio, one accountable team.",
+  },
+  {
+    title: "Timeless Design",
+    description:
+      "We design against trend cycles, for homes that will still feel right in twenty years.",
+  },
+];
+
+export const instagramImages = [
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=900&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=900&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=900&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=900&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop",
+];
