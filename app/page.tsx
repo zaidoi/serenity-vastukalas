@@ -6,7 +6,7 @@ import Services from "@/components/Services";
 import Materials from "@/components/Materials";
 import WhyChoose from "@/components/WhyChoose";
 import Testimonials from "@/components/Testimonials";
-import InstagramGallery from "@/components/InstagramGallery";
+import Faq from "@/components/Faq";
 import Consultation from "@/components/Consultation";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <Materials />
       <WhyChoose />
       <Testimonials />
-      <InstagramGallery />
+      <Faq />
       <Consultation />
     </>
   );

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { projects, serviceOfferings } from "@/lib/data";
+import { projects, serviceOfferings, designThemeOfferings } from "@/lib/data";
 
 const siteUrl = "https://serenityvastukala.com";
 
@@ -32,5 +32,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...projectRoutes, ...serviceRoutes];
+  const designThemeRoutes = designThemeOfferings.map((theme) => ({
+    url: `${siteUrl}/design-themes/${theme.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...projectRoutes,
+    ...serviceRoutes,
+    ...designThemeRoutes,
+  ];
 }

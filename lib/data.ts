@@ -120,7 +120,7 @@ export const projects: Project[] = [
     category: "Minimalistic Style",
     year: "2024",
     area: "2,900 sq. ft.",
-    cover: "/lodha marquee/WhatsApp Image 2024-11-02 at 16.41.12_a3cd15f7.jpg",
+    cover: "/lodha marquee/bedroom.jpg",
     story:
       "A three-generation family home, planned around an open courtyard at its heart, following vastu.",
     description:
@@ -219,54 +219,179 @@ export const projects: Project[] = [
   },
 ];
 
-export const themes = [
+// Compact design-theme list, feeds the homepage teaser section only —
+// mirrors `services` below, both in shape and in how it's consumed.
+export const designThemes = [
   {
-    name: "Contemporary",
+    title: "Modern",
     description:
-      "Clean architectural lines softened by natural materials and warm light.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      "Sharp lines, honest materials, and a palette that never overreaches.",
   },
   {
-    name: "Modern Minimal",
+    title: "Contemporary",
+    description:
+      "Fluid, of-the-moment interiors that borrow freely and settle in comfortably.",
+  },
+  {
+    title: "Minimalist",
     description: "Every object earns its place. Nothing more, nothing less.",
-    image:
-      "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    name: "Scandinavian",
-    description:
-      "Pale wood, soft textiles, and light that lingers in every corner.",
-    image:
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    name: "Japandi",
-    description:
-      "Japanese restraint meets Scandinavian warmth, in quiet balance.",
-    image:
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    name: "Luxury Modern",
+    title: "Luxury",
     description:
       "Sculptural forms, rich materials, and considered detail throughout.",
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    name: "Neo-Classical",
+    title: "Traditional",
     description:
       "Timeless proportion and craft, reinterpreted for the way we live now.",
-    image:
-      "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
+  },
+];
+
+// Design themes, each with its own dedicated page at /design-themes/[slug].
+// This is intentionally separate from `designThemes` above, which only
+// feeds the compact homepage teaser — same pattern as services / serviceOfferings.
+export type DesignThemeOffering = {
+  slug: string;
+  title: string;
+  shortDescription: string;
+  gallery: GalleryImage[];
+};
+
+export const designThemeOfferings: DesignThemeOffering[] = [
+  {
+    slug: "modern",
+    title: "Modern",
+    shortDescription:
+      "Sharp lines, honest materials, and a palette that never overreaches.",
+    gallery: [
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+    ],
   },
   {
-    name: "Industrial",
-    description:
-      "Honest materials — steel, concrete, timber — left to speak plainly.",
-    image:
-      "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+    slug: "contemporary",
+    title: "Contemporary",
+    shortDescription:
+      "Fluid, of-the-moment interiors that borrow freely and settle in comfortably.",
+    gallery: [
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "minimalist",
+    title: "Minimalist",
+    shortDescription: "Every object earns its place. Nothing more, nothing less.",
+    gallery: [
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "medium",
+        images: [
+          "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "luxury",
+    title: "Luxury",
+    shortDescription:
+      "Sculptural forms, rich materials, and considered detail throughout.",
+    gallery: [
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "traditional",
+    title: "Traditional",
+    shortDescription:
+      "Timeless proportion and craft, reinterpreted for the way we live now.",
+    gallery: [
+      {
+        type: "full",
+        images: [
+          "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1600&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "medium",
+        images: [
+          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
+        ],
+      },
+    ],
   },
 ];
 
@@ -746,6 +871,39 @@ export const whyChoose = [
     title: "Timeless Design",
     description:
       "We design against trend cycles, for homes that will still feel right in twenty years.",
+  },
+];
+
+export const faqs = [
+  {
+    question: "Which areas do you work in?",
+    answer:
+      "We're based in Jogeshwari West, Mumbai, and take on residential and commercial projects across Mumbai and the wider Mumbai Metropolitan Region.",
+  },
+  {
+    question: "Do you design according to Vastu Shastra?",
+    answer:
+      "Yes. Where a family wants it, we plan the layout to honour vastu principles from the outset, so it shapes the design rather than being retrofitted at the end.",
+  },
+  {
+    question: "Do you handle both design and execution?",
+    answer:
+      "Every project stays with one team from the first floor plan to the last cushion — space planning, material selection, detail drawings and on-site execution, all under one roof.",
+  },
+  {
+    question: "How long does a typical project take?",
+    answer:
+      "It depends on scope and site conditions, but most homes move from first consultation to handover in four to nine months. We'll give you a realistic timeline once we understand your space.",
+  },
+  {
+    question: "Do you take on commercial projects too?",
+    answer:
+      "Yes — alongside residential interiors, we design offices, retail stores, co-working spaces and hospitality projects.",
+  },
+  {
+    question: "How do I start a project with you?",
+    answer:
+      "Share a little about your home or space using the consultation form below. We personally read every enquiry and reply within two working days with an available slot.",
   },
 ];
 

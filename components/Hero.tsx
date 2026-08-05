@@ -17,38 +17,36 @@ const images = [
   "/heroimages/12.jpg"
 ];
 
-const line1 = "Homes designed";
-const line2 = "to feel like you.";
 
-function StaggerLine({
-  text,
-  delay,
-}: {
-  text: string;
-  delay: number;
-}) {
-  const words = text.split(" ");
+// function StaggerLine({
+//   text,
+//   delay,
+// }: {
+//   text: string;
+//   delay: number;
+// }) {
+//   const words = text.split(" ");
 
-  return (
-    <span className="block overflow-hidden">
-      {words.map((word, i) => (
-        <motion.span
-          key={i}
-          className="inline-block mr-[0.28em]"
-          initial={{ y: "110%", opacity: 0 }}
-          animate={{ y: "0%", opacity: 1 }}
-          transition={{
-            duration: 1.1,
-            delay: delay + i * 0.09,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-        >
-          {word}
-        </motion.span>
-      ))}
-    </span>
-  );
-}
+//   return (
+//     <span className="block overflow-hidden">
+//       {words.map((word, i) => (
+//         <motion.span
+//           key={i}
+//           className="inline-block mr-[0.28em]"
+//           initial={{ y: "110%", opacity: 0 }}
+//           animate={{ y: "0%", opacity: 1 }}
+//           transition={{
+//             duration: 1.1,
+//             delay: delay + i * 0.09,
+//             ease: [0.22, 1, 0.36, 1],
+//           }}
+//         >
+//           {word}
+//         </motion.span>
+//       ))}
+//     </span>
+//   );
+// }
 
 export default function Hero() {
   return (
