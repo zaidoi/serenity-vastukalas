@@ -223,21 +223,21 @@ export const projects: Project[] = [
 // mirrors `services` below, both in shape and in how it's consumed.
 export const designThemes = [
   {
-    title: "Modern",
+    title: "Modern Luxury ",
     description:
       "Sharp lines, honest materials, and a palette that never overreaches.",
   },
   {
-    title: "Contemporary",
+    title: "Mid Century ",
     description:
       "Fluid, of-the-moment interiors that borrow freely and settle in comfortably.",
   },
   {
-    title: "Minimalist",
+    title: "Modern Minimal ",
     description: "Every object earns its place. Nothing more, nothing less.",
   },
   {
-    title: "Luxury",
+    title: "Japandi",
     description:
       "Sculptural forms, rich materials, and considered detail throughout.",
   },
@@ -260,108 +260,190 @@ export type DesignThemeOffering = {
 
 export const designThemeOfferings: DesignThemeOffering[] = [
   {
-    slug: "modern",
-    title: "Modern",
+    slug: "modernluxury",
+    title: "Modern Luxury",
     shortDescription:
       "Sharp lines, honest materials, and a palette that never overreaches.",
     gallery: [
       {
-        type: "full",
+        type: "half",
         images: [
-          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop",
-        ],
-      },
-      {
-        type: "full",
-        images: [
-          "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1600&auto=format&fit=crop",
+          "/designthemes/modernluxurystyle/modern1.jpg",
+          "/designthemes/modernluxurystyle/modern3.jpg",
+          
         ],
       },
       {
         type: "half",
         images: [
-          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "contemporary",
-    title: "Contemporary",
-    shortDescription:
-      "Fluid, of-the-moment interiors that borrow freely and settle in comfortably.",
-    gallery: [
-      {
-        type: "full",
-        images: [
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
-        ],
-      },
-      {
-        type: "full",
-        images: [
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop",
+          "/designthemes/modernluxurystyle/modern2.jpg",
+          "/designthemes/modernluxurystyle/modern4.jpg",
+          
         ],
       },
       {
         type: "half",
         images: [
-          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+          "/designthemes/modernluxurystyle/modern5.jpg",
+          "/designthemes/modernluxurystyle/modern6.jpg",
         ],
       },
-    ],
-  },
-  {
-    slug: "minimalist",
-    title: "Minimalist",
-    shortDescription: "Every object earns its place. Nothing more, nothing less.",
-    gallery: [
       {
-        type: "full",
+        type: "half",
         images: [
-          "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1600&auto=format&fit=crop",
+          "/designthemes/modernluxurystyle/modern7.jpg",
+          "/designthemes/modernluxurystyle/modern8.webp",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/modernluxurystyle/modern9.jpg",
+          "/designthemes/modernluxurystyle/modern10.jpg",
         ],
       },
       {
         type: "medium",
         images: [
-          "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
-        ],
-      },
-      {
-        type: "half",
-        images: [
-          "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+          "/designthemes/modernluxurystyle/modern11.jpg",
         ],
       },
     ],
   },
   {
-    slug: "luxury",
-    title: "Luxury",
+    slug: "midcenturystyle",
+    title: "Mid Century Style",
     shortDescription:
-      "Sculptural forms, rich materials, and considered detail throughout.",
+      "Fluid, of-the-moment interiors that borrow freely and settle in comfortably.",
     gallery: [
       {
-        type: "full",
+        type: "half",
         images: [
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop",
+          "/designthemes/midcenturystyle/midcentury1.jpg",
+          "/designthemes/midcenturystyle/midcentury3.png",
         ],
       },
-      {
-        type: "full",
+     {
+        type: "half",
         images: [
-          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "/designthemes/midcenturystyle/midcentury2.jpg",
+          "/designthemes/midcenturystyle/midcentury4.png",
         ],
       },
       {
         type: "half",
         images: [
-          "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+          "/designthemes/midcenturystyle/midcentury5.jpg",
+          "/designthemes/midcenturystyle/midcentury7.jpg",
+        ],
+      },
+      {
+        type: "medium",
+        images: [
+         "/designthemes/midcenturystyle/midcentury6.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "modernminimal",
+    title: "Modern Minimalist",
+    shortDescription: "Every object earns its place. Nothing more, nothing less.",
+    gallery: [
+      {
+        type: "half",
+        images: [
+          "/designthemes/modernminimalstyle/modernminimal1.jpg",
+          "/designthemes/modernminimalstyle/modernminimal2.jpg",
+          
+        ],
+      },
+      {
+        type: "half",
+        images: [
+         "/designthemes/modernminimalstyle/modernminimal3.jpg",
+          "/designthemes/modernminimalstyle/modernminimal4.jpg",
+          
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/modernminimalstyle/modernminimal5.jpg",
+          "/designthemes/modernminimalstyle/modernminimal6.jpg",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/modernminimalstyle/modernminimal7.jpg",
+          "/designthemes/modernminimalstyle/modernminimal8.jpg",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/modernminimalstyle/modernminimal9.jpg",
+          "/designthemes/modernminimalstyle/modernminimal10.webp",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/modernminimalstyle/modernminimal11.jpg",
+          "/designthemes/modernminimalstyle/modernminimal12.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "japandi",
+    title: "Japandi",
+    shortDescription:
+      "Sculptural forms, rich materials, and considered detail throughout.",
+    gallery: [
+      {
+        type: "half",
+        images: [
+          "/designthemes/japandi/japandi1.jpeg",
+          "/designthemes/japandi/japandi2.jpeg",
+          
+        ],
+      },
+      {
+        type: "half",
+        images: [
+         "/designthemes/japandi/japandi3.jpeg",
+          "/designthemes/japandi/japandi4.jpeg",
+          
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/japandi/japandi5.jpeg",
+          "/designthemes/japandi/japandi6.jpeg",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/japandi/japandi7.jpeg",
+          "/designthemes/japandi/japandi8.jpeg",
+        ],
+      },
+      {
+        type: "half",
+        images: [
+          "/designthemes/japandi/japandi9.jpeg",
+          "/designthemes/japandi/japandi10.jpeg",
+        ],
+      },
+      {
+        type: "medium",
+        images: [
+          "/designthemes/japandi/japandi11.jpeg",
+          
         ],
       },
     ],
@@ -810,21 +892,26 @@ export const serviceOfferings: ServiceOffering[] = [
 export const testimonials = [
   {
     quote:
-      "They designed a home that feels like us, only quieter. Every morning starts in the one room we didn't expect to love.",
-    name: "Anjali & Rohan Menon",
-    location: "The Verandah House, Alappuzha",
+      "Trust was the foundation of our journey. Every commitment was honored, every detail was thoughtfully executed, and the level of coordination made the entire process effortless. The finishing quality is simply outstanding—our home reflects elegance, precision, and timeless luxury. Choosing this team was one of the best decisions we made.",
+    name: "Sanaullah",
+    location: "Windsor, Oshiwara",
   },
   {
     quote:
-      "Serenity Vastukala listened longer than any studio we met. The house they gave us answers questions we hadn't asked yet.",
-    name: "Priya Nair",
-    location: "Casa Linea, Bengaluru",
+      "Stepping into our home feels like stepping into a world of calm and comfort. The soothing color palette, warm lighting, and thoughtful design create a beautiful balance of elegance and relaxation . We couldnt be more happier with the experience and outcome.",
+    name: "Deepal Lulla",
+    location: "Imperial Heights, Goreagaon",
   },
   {
     quote:
-      "Nothing about our home feels decorated. It feels considered — which is a rarer, better thing.",
-    name: "Thomas & Deepa Varghese",
-    location: "The Courtyard Residence, Kottayam",
+      "Our new office has truly elevated the way we work and connect as a team. The space is designed thoughtfully, with a perfect balance of openness and privacy. The movement throughout the office feels seamless—every area flows naturally into the next, making day-to-day operations smooth and efficient.",
+    name: "Salim Bawa",
+    location: "Al Salim, Jogeshwari",
+  },
+  {
+    quote:
+      "We are absolutely in love with our new bedroom! Every design element has been thoughtfully planned—from the elegant wall panelling and soft curves to the warm ambient lighting that creates such a soothing atmosphere. Most importantly, they delivered everything on time, exactly as promised. It was a seamless experience from start to finish.",
+    location: "Lodha Marquise, Worli",
   },
 ];
 

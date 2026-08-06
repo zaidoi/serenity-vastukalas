@@ -3,7 +3,6 @@ import Philosophy from "@/components/Philosophy";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import DesignThemes from "@/components/DesignThemes";
 import Services from "@/components/Services";
-import Materials from "@/components/Materials";
 import WhyChoose from "@/components/WhyChoose";
 import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
@@ -17,7 +16,6 @@ export default function Home() {
       <FeaturedProjects />
       <DesignThemes />
       <Services />
-      <Materials />
       <WhyChoose />
       <Testimonials />
       <Faq />

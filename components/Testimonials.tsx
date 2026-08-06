@@ -25,7 +25,7 @@ export default function Testimonials() {
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-display text-2xl md:text-4xl leading-snug md:leading-[1.3]">
+              <p className="font-display text-2xl md:text-3xl leading-snug md:leading-[1.3]">
                 &ldquo;{active.quote}&rdquo;
               </p>
               <p className="mt-8 text-sm tracking-[0.08em] uppercase text-[#8C6B4F]">
