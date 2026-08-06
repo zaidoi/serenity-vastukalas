@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import ServicesGrid from "@/components/ServicesGrid";
-import Materials from "@/components/Materials";
 import Consultation from "@/components/Consultation";
 import Reveal from "@/components/Reveal";
 
@@ -32,7 +31,7 @@ export default function ServicesPage() {
         </div>
       </section>
       <ServicesGrid />
-      <Materials />
+      
       <Consultation />
     </>
   );
