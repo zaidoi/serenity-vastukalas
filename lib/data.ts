@@ -270,7 +270,6 @@ export const designThemeOfferings: DesignThemeOffering[] = [
         images: [
           "/designthemes/modernluxurystyle/modern1.jpg",
           "/designthemes/modernluxurystyle/modern3.jpg",
-          
         ],
       },
       {
@@ -278,7 +277,6 @@ export const designThemeOfferings: DesignThemeOffering[] = [
         images: [
           "/designthemes/modernluxurystyle/modern2.jpg",
           "/designthemes/modernluxurystyle/modern4.jpg",
-          
         ],
       },
       {
@@ -304,9 +302,7 @@ export const designThemeOfferings: DesignThemeOffering[] = [
       },
       {
         type: "medium",
-        images: [
-          "/designthemes/modernluxurystyle/modern11.jpg",
-        ],
+        images: ["/designthemes/modernluxurystyle/modern11.jpg"],
       },
     ],
   },
@@ -323,7 +319,7 @@ export const designThemeOfferings: DesignThemeOffering[] = [
           "/designthemes/midcenturystyle/midcentury3.png",
         ],
       },
-     {
+      {
         type: "half",
         images: [
           "/designthemes/midcenturystyle/midcentury2.jpg",
@@ -339,31 +335,28 @@ export const designThemeOfferings: DesignThemeOffering[] = [
       },
       {
         type: "medium",
-        images: [
-         "/designthemes/midcenturystyle/midcentury6.jpg",
-        ],
+        images: ["/designthemes/midcenturystyle/midcentury6.jpg"],
       },
     ],
   },
   {
     slug: "modernminimal",
     title: "Modern Minimalist",
-    shortDescription: "Every object earns its place. Nothing more, nothing less.",
+    shortDescription:
+      "Every object earns its place. Nothing more, nothing less.",
     gallery: [
       {
         type: "half",
         images: [
           "/designthemes/modernminimalstyle/modernminimal1.jpg",
           "/designthemes/modernminimalstyle/modernminimal2.jpg",
-          
         ],
       },
       {
         type: "half",
         images: [
-         "/designthemes/modernminimalstyle/modernminimal3.jpg",
+          "/designthemes/modernminimalstyle/modernminimal3.jpg",
           "/designthemes/modernminimalstyle/modernminimal4.jpg",
-          
         ],
       },
       {
@@ -407,15 +400,13 @@ export const designThemeOfferings: DesignThemeOffering[] = [
         images: [
           "/designthemes/japandi/japandi1.jpeg",
           "/designthemes/japandi/japandi2.jpeg",
-          
         ],
       },
       {
         type: "half",
         images: [
-         "/designthemes/japandi/japandi3.jpeg",
+          "/designthemes/japandi/japandi3.jpeg",
           "/designthemes/japandi/japandi4.jpeg",
-          
         ],
       },
       {
@@ -441,37 +432,7 @@ export const designThemeOfferings: DesignThemeOffering[] = [
       },
       {
         type: "medium",
-        images: [
-          "/designthemes/japandi/japandi11.jpeg",
-          
-        ],
-      },
-    ],
-  },
-  {
-    slug: "traditional",
-    title: "Traditional",
-    shortDescription:
-      "Timeless proportion and craft, reinterpreted for the way we live now.",
-    gallery: [
-      {
-        type: "full",
-        images: [
-          "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1600&auto=format&fit=crop",
-        ],
-      },
-      {
-        type: "medium",
-        images: [
-          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
-        ],
-      },
-      {
-        type: "half",
-        images: [
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
-        ],
+        images: ["/designthemes/japandi/japandi11.jpeg"],
       },
     ],
   },
@@ -535,7 +496,7 @@ export const services = [
 export type ServiceSubcategory = {
   name: string;
   image: string;
-  description: string;
+  description?: string;
 };
 
 export type ServiceOffering = {
@@ -553,26 +514,25 @@ export const serviceOfferings: ServiceOffering[] = [
     title: "Bespoke Residential Interiors",
     shortDescription:
       "Homes designed around how a family actually lives — considered, personal, and built to last.",
-    heroImage:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop",
+    heroImage: "/services/beSpoke/beSpokeApartment.jpeg",
     description:
       "Every residential project begins the same way — not with a moodboard, but with a conversation about how a family moves through their day. From apartments to independent homes, we design interiors that hold daily life comfortably, using materials and proportions chosen to age well rather than photograph well. The result is a home that feels inevitable, not decorated.",
     subcategories: [
       {
         name: "Apartments",
-        image: "/sevices/beSpoke/beSpokeApartment.jpeg",
+        image: "/services/beSpoke/beSpokeApartment.jpeg",
         description:
           "Workspaces planned around focus, collaboration and the everyday rhythm of a team.",
       },
       {
         name: "Penthouses",
-        image: "/sevices/beSpoke/beSpokePenthouse.jpeg",
+        image: "/services/beSpoke/beSpokePenthouse.jpeg",
         description:
           "Flexible environments designed to feel welcoming to many different people, every day.",
       },
       {
         name: "Villas",
-        image: "/sevices/beSpoke/beSpokeVilla.jpeg",
+        image: "/services/beSpoke/beSpokeVilla.jpeg",
         description:
           "Layouts that guide movement and attention, built around how customers actually browse.",
       },
@@ -597,43 +557,37 @@ export const serviceOfferings: ServiceOffering[] = [
     title: "Modern Commercial Interiors",
     shortDescription:
       "Workspaces and commercial environments designed to perform as well as they look.",
-    heroImage:
-      "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=1800&auto=format&fit=crop",
+    heroImage: "/services/modernCommercialInterior/coworkingInterior.jpeg",
     description:
       "Commercial interiors carry a different brief — they need to work for many people, all day, and still say something about the business behind them. We design offices, retail spaces and hospitality environments that balance function with atmosphere, so a space energises without exhausting the people inside it.",
     subcategories: [
       {
         name: "Corporate Offices",
-        image:
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+        image: "/services/modernCommercialInterior/corporateInterior.jpeg",
         description:
           "Workspaces planned around focus, collaboration and the everyday rhythm of a team.",
       },
       {
         name: "Co-working Spaces",
-        image:
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+        image: "/services/modernCommercialInterior/coworkingInterior.jpeg",
         description:
           "Flexible environments designed to feel welcoming to many different people, every day.",
       },
       {
         name: "Retail Stores",
-        image:
-          "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1200&auto=format&fit=crop",
+        image: "/services/modernCommercialInterior/retail1.jpeg",
         description:
           "Layouts that guide movement and attention, built around how customers actually browse.",
       },
       {
         name: "Hospitality Spaces",
-        image:
-          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop",
+        image: "/services/modernCommercialInterior/hospitality1.jpeg",
         description:
           "Restaurants, cafés and guest spaces designed for atmosphere as much as function.",
       },
       {
         name: "Studios & Creative Environments",
-        image:
-          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+        image: "/services/modernCommercialInterior/retail2.jpeg",
         description:
           "Adaptable spaces for teams whose work changes shape from one week to the next.",
       },
@@ -815,7 +769,29 @@ export const serviceOfferings: ServiceOffering[] = [
     heroImage:
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1800&auto=format&fit=crop",
     description:
-      "The difference between a good design and a beautifully built one usually comes down to detail drawings — the joinery sections, skirting profiles and millimetre-level notes that never appear in a rendering, but decide how a space actually feels underfoot and to the touch.",
+      "Our detailed drawings transform design concepts into clear, accurate, and execution-ready documentation. Every element of the interior is carefully planned and documented to ensure that the design is executed exactly as envisioned.From furniture layouts and modular details to electrical, plumbing, ceiling, flooring, and material specifications, our drawings provide contractors and craftsmen with the technical clarity required for seamless execution.",
+    subcategories: [
+      {
+        name: "Lighting Selection",
+        image: "/services/detailDrawing/detailDrawing1.jpeg",
+      },
+      {
+        name: "Carpet & Rug Selection",
+        image: "/services/detailDrawing/detailDrawing2.jpeg",
+      },
+      {
+        name: "Wall Decor Selection",
+        image: "/services/detailDrawing/detailDrawing3.jpeg",
+      },
+      {
+        name: "Curtain & Fabric Selection",
+        image: "/services/detailDrawing/detailDrawing4.jpeg",
+      },
+      {
+        name: "Chandelier Selection",
+        image: "/services/detailDrawing/detailDrawing5.jpeg",
+      },
+    ],
   },
   {
     slug: "furniture-design",
@@ -826,6 +802,32 @@ export const serviceOfferings: ServiceOffering[] = [
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1800&auto=format&fit=crop",
     description:
       "Off-the-shelf furniture rarely fits a considered interior. We design bespoke pieces where scale and proportion matter most, and curate the rest from makers whose craft matches the rest of the home — so every piece belongs, rather than merely fits.",
+    subcategories: [
+      {
+        name: "Lighting Selection",
+        image: "/services/furniturePlanning/furniturePlanning1.jpeg",
+      },
+      {
+        name: "Carpet & Rug Selection",
+        image: "/services/furniturePlanning/furniturePlanning2.jpeg",
+      },
+      {
+        name: "Wall Decor Selection",
+        image: "/services/furniturePlanning/furniturePlanning3.jpeg",
+      },
+      {
+        name: "Curtain & Fabric Selection",
+        image: "/services/furniturePlanning/furniturePlanning4.jpeg",
+      },
+      {
+        name: "Chandelier Selection",
+        image: "/services/furniturePlanning/furniturePlanning5.jpeg",
+      },
+      {
+        name: "Accessories & Decor Selection",
+        image: "/services/furniturePlanning/furniturePlanning6.jpeg",
+      },
+    ],
   },
   {
     slug: "project-execution",
@@ -915,28 +917,7 @@ export const testimonials = [
   },
 ];
 
-export const materials = [
-  {
-    name: "Wood",
-    description:
-      "Teak, walnut and reclaimed timber, selected for grain before finish — allowed to darken and soften with age.",
-  },
-  {
-    name: "Stone",
-    description:
-      "Kota, limestone and marble, hand-set to let natural veining lead the design rather than repeat it.",
-  },
-  {
-    name: "Metal",
-    description:
-      "Brass and blackened steel, used sparingly — for the weight of a handle, the line of a rail.",
-  },
-  {
-    name: "Textile",
-    description:
-      "Linen, cane and handloom cotton, chosen for how they feel underfoot and against the hand.",
-  },
-];
+
 
 export const whyChoose = [
   {
@@ -992,13 +973,4 @@ export const faqs = [
     answer:
       "Share a little about your home or space using the consultation form below. We personally read every enquiry and reply within two working days with an available slot.",
   },
-];
-
-export const instagramImages = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop",
 ];

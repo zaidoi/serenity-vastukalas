@@ -9,7 +9,7 @@ export default function Philosophy() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="font-display text-[10vw] leading-[1.05] md:text-[3vw] md:leading-[1.12] max-w-4xl">
-            WE DON'T JUST DESIGN SPACES, <span className="italic text-[var(--color-earth)]">we design experiences.</span>
+            WE DON&apos;T JUST DESIGN SPACES, <span className="italic text-[var(--color-earth)]">we design experiences.</span>
           </h2>
         </Reveal>
       </div>

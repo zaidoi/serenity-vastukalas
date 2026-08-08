@@ -89,7 +89,7 @@ export default async function ServicePage({
                         alt={sub.name}
                         fill
                         sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
                     <h3 className="mt-5 font-display text-xl">{sub.name}</h3>
