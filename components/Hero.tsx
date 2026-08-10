@@ -23,7 +23,7 @@ export default function Hero() {
       className="
         relative
         w-full
-        h-[calc(100svh-5rem)]
+        h-[calc(100svh-4rem)]
         md:h-[calc(100svh-1rem)]
         overflow-hidden
       "

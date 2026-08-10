@@ -54,7 +54,7 @@ export default function Navbar() {
             {/* Brand Name */}
             <span
               style={{ color: textColor }}
-              className="whitespace-nowrap text-[clamp(11px,1vw,18px)] tracking-[0.07em] uppercase font-body font-normal"
+              className="whitespace-nowrap text-[clamp(14px,1vw,18px)] tracking-[0.07em] uppercase font-body font-normal"
             >
               Serenity Vastukala
             </span>

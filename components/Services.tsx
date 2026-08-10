@@ -1,4 +1,5 @@
 import { services } from "@/lib/data";
+import Link from "next/link";
 import Reveal from "./Reveal";
 
 export default function Services() {
@@ -7,9 +8,11 @@ export default function Services() {
       <div className="container-luxe">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-12 md:gap-20">
           <div>
+            <Link href="/services">
             <Reveal>
               <p className="eyebrow mb-6">Services</p>
             </Reveal>
+            </Link>
             <Reveal delay={0.1}>
               <h2 className="font-display text-[10vw] leading-[1.02] md:text-[3.8vw] md:leading-[1.05]">
                 Every stage, under one roof

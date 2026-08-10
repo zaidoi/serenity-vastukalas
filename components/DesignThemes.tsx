@@ -1,5 +1,6 @@
 import { designThemes } from "@/lib/data";
 import Reveal from "./Reveal";
+import Link from "next/link";
 
 export default function DesignThemes() {
   return (
@@ -7,9 +8,11 @@ export default function DesignThemes() {
       <div className="container-luxe">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-12 md:gap-20">
           <div>
+            <Link href="/design-themes">
             <Reveal>
               <p className="eyebrow mb-6">Design Themes</p>
             </Reveal>
+            </Link>
             <Reveal delay={0.1}>
               <h2 className="font-display text-[10vw] leading-[1.02] md:text-[3.8vw] md:leading-[1.05]">
                 A language of styles, one point of view
