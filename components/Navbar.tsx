@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       {/* Main Header */}
       <div className="container-luxe">
-        <div className="flex items-center justify-between w-full h-[clamp(84px,9vw,132px)] gap-[clamp(12px,2.5vw,56px)]">
+        <div className="flex items-center justify-between w-full h-[clamp(64px,6vw,92px)] gap-[clamp(12px,2.5vw,56px)]">
 
           {/* Logo + Brand Name */}
           <Link
@@ -48,13 +48,13 @@ export default function Navbar() {
               width={120}
               height={120}
               priority
-              className="w-[clamp(52px,6.5vw,112px)] h-[clamp(52px,6.5vw,112px)] object-contain shrink-0"
+              className="w-[clamp(40px,4.5vw,76px)] h-[clamp(40px,4.5vw,76px)] object-contain shrink-0"
             />
 
             {/* Brand Name */}
             <span
               style={{ color: textColor }}
-              className="whitespace-nowrap text-[clamp(12px,1.15vw,22px)] tracking-[0.07em] uppercase font-body font-normal"
+              className="whitespace-nowrap text-[clamp(11px,1vw,18px)] tracking-[0.07em] uppercase font-body font-normal"
             >
               Serenity Vastukala
             </span>
@@ -128,9 +128,9 @@ export default function Navbar() {
                 justify-center
                 whitespace-nowrap
                 border
-                px-[clamp(12px,1.4vw,28px)]
-                py-[clamp(7px,0.7vw,14px)]
-                text-[clamp(9px,0.72vw,13px)]
+                px-[clamp(12px,1.4vw,26px)]
+                py-[clamp(6px,0.55vw,11px)]
+                text-[clamp(9px,0.7vw,12px)]
                 tracking-[0.1em]
                 uppercase
                 hover:bg-[#2B2B2B]
