@@ -43,7 +43,7 @@ export default function Navbar() {
           >
             {/* Logo Image */}
             <Image
-              src="/Logo.jpeg"
+              src="/serenity-vastukala-logo.svg"
               alt="Serenity Vastukala logo"
               width={120}
               height={120}
