@@ -51,6 +51,10 @@ export const projects: Project[] = [
         type: "full",
         images: ["/windsorphotos/12.jpg"],
       },
+      {
+        type: "full",
+        images: ["/windsorphotos/20.jpg"],
+      },
 
       {
         type: "half",
@@ -83,6 +87,10 @@ export const projects: Project[] = [
       {
         type: "full",
         images: ["/imperialheights/A_22.jpg"],
+      },
+       {
+        type: "full",
+        images: ["/imperialheights/A_31.jpg"],
       },
     ],
   },
@@ -241,11 +249,7 @@ export const designThemes = [
     description:
       "Sculptural forms, rich materials, and considered detail throughout.",
   },
-  {
-    title: "Traditional",
-    description:
-      "Timeless proportion and craft, reinterpreted for the way we live now.",
-  },
+  
 ];
 
 // Design themes, each with its own dedicated page at /design-themes/[slug].
@@ -481,13 +485,7 @@ export const services = [
     image:
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
   },
-  {
-    title: "Styling",
-    description:
-      "The final layer — art, objects and textiles that make a house feel lived in.",
-    image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
-  },
+  
 ];
 
 // Service offerings, each with its own dedicated page at /services/[slug].
@@ -737,7 +735,7 @@ export const serviceOfferings: ServiceOffering[] = [
       },
       {
         name: "Wall Decor Selection",
-        image: "/services/spacePlanning/spacePlanning3.jpeg",
+        image: "/services/materialSection/materialSection3.jpeg",
         description:
           "Curated selection of premium materials, finishes and textures.",
       },
