@@ -88,7 +88,7 @@ export const projects: Project[] = [
         type: "full",
         images: ["/imperialheights/A_22.jpg"],
       },
-       {
+      {
         type: "full",
         images: ["/imperialheights/A_31.jpg"],
       },
@@ -249,7 +249,6 @@ export const designThemes = [
     description:
       "Sculptural forms, rich materials, and considered detail throughout.",
   },
-  
 ];
 
 // Design themes, each with its own dedicated page at /design-themes/[slug].
@@ -297,16 +296,10 @@ export const designThemeOfferings: DesignThemeOffering[] = [
           "/designthemes/modernluxurystyle/modern8.png",
         ],
       },
-      {
-        type: "half",
-        images: [
-          "/designthemes/modernluxurystyle/modern9.png",
-          "/designthemes/modernluxurystyle/modern10.png",
-        ],
-      },
+     
       {
         type: "medium",
-        images: ["/designthemes/modernluxurystyle/modern11.png"],
+        images: ["/designthemes/modernluxurystyle/modern9.png"],
       },
     ],
   },
@@ -352,43 +345,43 @@ export const designThemeOfferings: DesignThemeOffering[] = [
       {
         type: "half",
         images: [
-          "/designthemes/modernminimalstyle/modernminimal1.jpg",
-          "/designthemes/modernminimalstyle/modernminimal2.jpg",
+          "/designthemes/modernminimalstyle/modern_minimal_1.png",
+          "/designthemes/modernminimalstyle/modern_minimal_2.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernminimalstyle/modernminimal3.jpg",
-          "/designthemes/modernminimalstyle/modernminimal4.jpg",
+          "/designthemes/modernminimalstyle/modern_minimal_3.png",
+          "/designthemes/modernminimalstyle/modern_minimal_4.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernminimalstyle/modernminimal5.jpg",
-          "/designthemes/modernminimalstyle/modernminimal6.jpg",
+          "/designthemes/modernminimalstyle/modern_minimal_5.png",
+          "/designthemes/modernminimalstyle/modern_minimal_6.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernminimalstyle/modernminimal7.jpg",
-          "/designthemes/modernminimalstyle/modernminimal8.jpg",
+          "/designthemes/modernminimalstyle/modern_minimal_7.png",
+          "/designthemes/modernminimalstyle/modern_minimal_8.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernminimalstyle/modernminimal9.jpg",
-          "/designthemes/modernminimalstyle/modernminimal10.webp",
+          "/designthemes/modernminimalstyle/modern_minimal_9.png",
+          "/designthemes/modernminimalstyle/modern_minimal_10.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernminimalstyle/modernminimal11.jpg",
-          "/designthemes/modernminimalstyle/modernminimal12.jpg",
+          "/designthemes/modernminimalstyle/modern_minimal_11.png",
+          "/designthemes/modernminimalstyle/modern_minimal_12.png",
         ],
       },
     ],
@@ -434,10 +427,7 @@ export const designThemeOfferings: DesignThemeOffering[] = [
           "/designthemes/japandi/japandi10.jpeg",
         ],
       },
-      {
-        type: "medium",
-        images: ["/designthemes/japandi/japandi11.jpeg"],
-      },
+     
     ],
   },
 ];
@@ -485,7 +475,6 @@ export const services = [
     image:
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
   },
-  
 ];
 
 // Service offerings, each with its own dedicated page at /services/[slug].
@@ -493,7 +482,7 @@ export const services = [
 // the compact homepage teaser and is left untouched by design.
 export type ServiceSubcategory = {
   name?: string;
-  alt?:string;
+  alt?: string;
   image: string;
   description?: string;
 };
@@ -771,23 +760,23 @@ export const serviceOfferings: ServiceOffering[] = [
       "Our detailed drawings transform design concepts into clear, accurate, and execution-ready documentation. Every element of the interior is carefully planned and documented to ensure that the design is executed exactly as envisioned.From furniture layouts and modular details to electrical, plumbing, ceiling, flooring, and material specifications, our drawings provide contractors and craftsmen with the technical clarity required for seamless execution.",
     subcategories: [
       {
-        alt:"detailDrawing1",
+        alt: "detailDrawing1",
         image: "/services/detailDrawing/detailDrawing1.jpeg",
       },
       {
-        alt:"detailDrawing2",
+        alt: "detailDrawing2",
         image: "/services/detailDrawing/detailDrawing2.jpeg",
       },
       {
-        alt:"detailDrawing3",
+        alt: "detailDrawing3",
         image: "/services/detailDrawing/detailDrawing3.jpeg",
       },
       {
-        alt:"detailDrawing4",
+        alt: "detailDrawing4",
         image: "/services/detailDrawing/detailDrawing4.jpeg",
       },
       {
-        alt:"detailDrawing5",
+        alt: "detailDrawing5",
         image: "/services/detailDrawing/detailDrawing5.jpeg",
       },
     ],
@@ -803,27 +792,27 @@ export const serviceOfferings: ServiceOffering[] = [
       "Off-the-shelf furniture rarely fits a considered interior. We design bespoke pieces where scale and proportion matter most, and curate the rest from makers whose craft matches the rest of the home — so every piece belongs, rather than merely fits.",
     subcategories: [
       {
-        name: "Lighting Selection",
+        alt: "furnitureDesign1",
         image: "/services/furniturePlanning/furniturePlanning1.jpeg",
       },
       {
-        name: "Carpet & Rug Selection",
+        alt: "furnitureDesign2",
         image: "/services/furniturePlanning/furniturePlanning2.jpeg",
       },
       {
-        name: "Wall Decor Selection",
+        alt: "furnitureDesign3",
         image: "/services/furniturePlanning/furniturePlanning3.jpeg",
       },
       {
-        name: "Curtain & Fabric Selection",
+        alt: "furnitureDesign4",
         image: "/services/furniturePlanning/furniturePlanning4.jpeg",
       },
       {
-        name: "Chandelier Selection",
+        alt: "furnitureDesign5",
         image: "/services/furniturePlanning/furniturePlanning5.jpeg",
       },
       {
-        name: "Accessories & Decor Selection",
+        alt: "furnitureDesign6",
         image: "/services/furniturePlanning/furniturePlanning6.jpeg",
       },
     ],
@@ -915,8 +904,6 @@ export const testimonials = [
     location: "Lodha Marquise, Worli",
   },
 ];
-
-
 
 export const whyChoose = [
   {

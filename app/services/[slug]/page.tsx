@@ -85,7 +85,7 @@ export default async function ServicePage({
                   <div>
                     <div
                       className={`relative overflow-hidden ${
-                        sub?.alt ? "aspect-[3/3]" : "aspect-[4/4]"
+                        sub?.alt ? "aspect-[3/3]" : "aspect-[4/3]"
                       }`}
                     >
                       <Image
