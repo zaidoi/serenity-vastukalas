@@ -81,15 +81,19 @@ export default async function ServicePage({
             </Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
               {service.subcategories.map((sub, i) => (
-                <Reveal key={sub.name} delay={(i % 6) * 0.06}>
+                <Reveal key={sub.name || sub.alt} delay={(i % 6) * 0.06}>
                   <div>
-                    <div className="relative overflow-hidden aspect-[4/3]">
+                    <div
+                      className={`relative overflow-hidden ${
+                        sub?.alt ? "aspect-[3/3]" : "aspect-[4/4]"
+                      }`}
+                    >
                       <Image
                         src={sub.image}
-                        alt={sub.name}
+                        alt={sub?.name || sub?.alt || "Interior design"}
                         fill
                         sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-                        className="object-contain"
+                        className="object-cover"
                       />
                     </div>
                     <h3 className="mt-5 font-display text-xl">{sub.name}</h3>

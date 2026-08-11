@@ -272,41 +272,41 @@ export const designThemeOfferings: DesignThemeOffering[] = [
       {
         type: "half",
         images: [
-          "/designthemes/modernluxurystyle/modern1.jpg",
-          "/designthemes/modernluxurystyle/modern3.jpg",
+          "/designthemes/modernluxurystyle/modern1.png",
+          "/designthemes/modernluxurystyle/modern3.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernluxurystyle/modern2.jpg",
-          "/designthemes/modernluxurystyle/modern4.jpg",
+          "/designthemes/modernluxurystyle/modern2.png",
+          "/designthemes/modernluxurystyle/modern4.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernluxurystyle/modern5.jpg",
-          "/designthemes/modernluxurystyle/modern6.jpg",
+          "/designthemes/modernluxurystyle/modern5.png",
+          "/designthemes/modernluxurystyle/modern6.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernluxurystyle/modern7.jpg",
-          "/designthemes/modernluxurystyle/modern8.webp",
+          "/designthemes/modernluxurystyle/modern7.png",
+          "/designthemes/modernluxurystyle/modern8.png",
         ],
       },
       {
         type: "half",
         images: [
-          "/designthemes/modernluxurystyle/modern9.jpg",
-          "/designthemes/modernluxurystyle/modern10.jpg",
+          "/designthemes/modernluxurystyle/modern9.png",
+          "/designthemes/modernluxurystyle/modern10.png",
         ],
       },
       {
         type: "medium",
-        images: ["/designthemes/modernluxurystyle/modern11.jpg"],
+        images: ["/designthemes/modernluxurystyle/modern11.png"],
       },
     ],
   },
@@ -492,7 +492,8 @@ export const services = [
 // This is intentionally separate from `services` above, which only feeds
 // the compact homepage teaser and is left untouched by design.
 export type ServiceSubcategory = {
-  name: string;
+  name?: string;
+  alt?:string;
   image: string;
   description?: string;
 };
@@ -770,23 +771,23 @@ export const serviceOfferings: ServiceOffering[] = [
       "Our detailed drawings transform design concepts into clear, accurate, and execution-ready documentation. Every element of the interior is carefully planned and documented to ensure that the design is executed exactly as envisioned.From furniture layouts and modular details to electrical, plumbing, ceiling, flooring, and material specifications, our drawings provide contractors and craftsmen with the technical clarity required for seamless execution.",
     subcategories: [
       {
-        name: "Lighting Selection",
+        alt:"detailDrawing1",
         image: "/services/detailDrawing/detailDrawing1.jpeg",
       },
       {
-        name: "Carpet & Rug Selection",
+        alt:"detailDrawing2",
         image: "/services/detailDrawing/detailDrawing2.jpeg",
       },
       {
-        name: "Wall Decor Selection",
+        alt:"detailDrawing3",
         image: "/services/detailDrawing/detailDrawing3.jpeg",
       },
       {
-        name: "Curtain & Fabric Selection",
+        alt:"detailDrawing4",
         image: "/services/detailDrawing/detailDrawing4.jpeg",
       },
       {
-        name: "Chandelier Selection",
+        alt:"detailDrawing5",
         image: "/services/detailDrawing/detailDrawing5.jpeg",
       },
     ],
