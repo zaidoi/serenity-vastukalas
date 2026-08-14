@@ -119,6 +119,10 @@ export const projects: Project[] = [
         type: "full",
         images: ["/desai villa/428A5545_Edited.jpg"],
       },
+      {
+        type: "medium",
+        images: ["/desai villa/428A5565_Edited.jpg"],
+      },
     ],
   },
   {
@@ -296,7 +300,7 @@ export const designThemeOfferings: DesignThemeOffering[] = [
           "/designthemes/modernluxurystyle/modern8.png",
         ],
       },
-     
+
       {
         type: "medium",
         images: ["/designthemes/modernluxurystyle/modern9.png"],
@@ -427,12 +431,30 @@ export const designThemeOfferings: DesignThemeOffering[] = [
           "/designthemes/japandi/japandi10.jpeg",
         ],
       },
-     
     ],
   },
 ];
 
 export const services = [
+  {
+    title: "Be Spoke Residential Interiors ",
+    description: "Thoughtfully designed homes, tailored to how you live.",
+    image:
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Modern Commercial Interiors",
+    description:
+      "Workspaces and commercial enviroments designed to perform as well as they look.",
+    image:
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Architecture Planning",
+    description: "Thoughtful spaces, planned with purpose and built to endure.",
+    image:
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+  },
   {
     title: "Space Planning",
     description:
@@ -901,6 +923,7 @@ export const testimonials = [
   {
     quote:
       "We are absolutely in love with our new bedroom! Every design element has been thoughtfully planned—from the elegant wall panelling and soft curves to the warm ambient lighting that creates such a soothing atmosphere. Most importantly, they delivered everything on time, exactly as promised. It was a seamless experience from start to finish.",
+    name: "Ayush Malhotra",
     location: "Lodha Marquise, Worli",
   },
 ];
