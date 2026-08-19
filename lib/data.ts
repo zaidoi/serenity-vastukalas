@@ -983,3 +983,4 @@ export const faqs = [
       "Share a little about your home or space using the consultation form below. We personally read every enquiry and reply within two working days with an available slot.",
   },
 ];
+// end
